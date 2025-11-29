@@ -59,9 +59,7 @@ export const useCalendarStore = () => {
                 onAddNewEvent({ ...calendarEvent, id: eventData.id, user })
             );
         } catch (error) {
-            /** Errors Backend Response is a String Array */
-            const { errors } = error.response.data;
-            Swal.fire('Error al guardar', errors.toString(), 'error');
+            console.log(error);
         }
     };
 

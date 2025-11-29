@@ -3679,7 +3679,7 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-workbox-background-sync@7.4.0:
+workbox-background-sync@^7.4.0, workbox-background-sync@7.4.0:
   version "7.4.0"
   resolved "https://registry.npmjs.org/workbox-background-sync/-/workbox-background-sync-7.4.0.tgz"
   integrity sha512-8CB9OxKAgKZKyNMwfGZ1XESx89GryWTfI+V5yEj8sHjFH8MFelUwYXEyldEK6M6oKMmn807GoJFUEA1sC4XS9w==
