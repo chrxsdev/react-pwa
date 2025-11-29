@@ -7,13 +7,16 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw-template.js',
       registerType: 'autoUpdate',
       devOptions: {
         enabled: true,
         type: 'module',
         navigateFallback: 'index.html',
       },
-      workbox: {
+      injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}'],
       },
     }),
